@@ -48,7 +48,7 @@ A user can:
  Add a photo or note: If user tried the pin (such as a recipe, a craft, etc.) then they can upload their own photo and add a comment about what they did or didn't like.
 
 #### Discover new things on Pinterest
-  To find what is new the user can browse through the unique categories Pinterest has available in the top right corner, marked by the hamburger button.
+ To find what is new the user can browse through the unique categories Pinterest has available in the top right corner, marked by the hamburger button.
 
  The user can find the following categories plus many others here:
 
