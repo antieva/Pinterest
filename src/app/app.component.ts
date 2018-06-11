@@ -10,9 +10,9 @@ export class AppComponent {
   title = 'app';
 
   users: User[] = [
-  new User('emailOne@gmail.com', '123password', 'femail', 'English', 'USA', ['Home decor', 'Makeup', 'Food and drink', 'Humor', 'Art']),
-  new User('emailTwo@gmail.com', '456password', 'femail', 'English', 'USA', ['Home decor', 'Makeup', 'Food and drink', 'Humor', 'Art']),
-  new User('emailThree@gmail.com', '111password', 'male', 'English', 'USA', ['Home decor', 'Healthy Snacks', 'Food and drink', 'Humor', 'Workouts'])
+  new User('emailOne@gmail.com', '123password'),
+  new User('emailTwo@gmail.com', '456password'),
+  new User('emailThree@gmail.com', '111password')
   ];
 
   isUniqueUser(newUser: User) {
