@@ -487,6 +487,9 @@ opacity: 0;
 }
 }
 
+html:not([dir=rtl]) ._sk {
+text-align: left;
+}
 ._5h0d ._5h0o {
 font-size: 16px;
 margin-right: 12px;
@@ -499,4 +502,64 @@ overflow: hidden;
 text-align: center;
 text-overflow: clip;
 white-space: nowrap;
+}
+._s8 {
+font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto Oxygen-Sans,Ubuntu,Cantarell,“Fira Sans”,“Droid Sans”,Helvetica Neue,Helvetica,\\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3,Hiragino Kaku Gothic Pro,\\30E1\30A4\30EA\30AA,Meiryo,"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF",Arial,sans-serif;
+}
+._s9 {
+letter-spacing: -.4px;
+}
+._t2 {
+cursor: pointer;
+}
+._40 {
+width: 100%;
+}
+._2s {
+box-sizing: border-box;
+}
+._2p {
+min-height: 36px;
+}
+._27 {
+display: block;
+}
+._5e {
+border: 0;
+}
+._sr {
+padding: 8px 14px;
+}
+._so {
+border-radius: 4px;
+}
+._2q {
+min-height: 40px;
+}
+._yn {
+cursor: text;
+}
+._yl {
+border-color: #b5b5b5;
+}
+._yk {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+border-radius: 4px;
+border-style: solid;
+border-width: 1px;
+padding: 8px 14px;
+}
+._5n {
+color: #555;
+}
+._5i {
+background-color: #fff;
+}
+._td {
+font-size: 16px;
+}
+._ta {
+  text-align: center;
 }
