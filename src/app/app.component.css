@@ -490,6 +490,36 @@ opacity: 0;
 html:not([dir=rtl]) ._sk {
 text-align: left;
 }
+._51mz {
+border: 0;
+border-collapse: collapse;
+border-spacing: 0;
+}
+._5h0i {
+background-color: #4267b2;
+border-radius: 4px;
+color: #fff;
+}
+._rw {
+  padding-bottom: 10%;
+}
+table {
+display: table;
+border-collapse: separate;
+-webkit-border-horizontal-spacing: 2px;
+-webkit-border-vertical-spacing: 2px;
+border-top-color: gray;
+border-right-color: gray;
+border-bottom-color: gray;
+border-left-color: gray;
+}
+._5h0c {
+background-color: #e9ebee;
+cursor: pointer;
+display: inline-block;
+vertical-align: top;
+}
+
 ._5h0d ._5h0o {
 font-size: 16px;
 margin-right: 12px;

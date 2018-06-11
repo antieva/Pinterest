@@ -1,0 +1,99 @@
+input::-ms-clear {
+display: none;
+}
+
+button, input, select, textarea {
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,"ＭＳ Ｐゴシック",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+font-size: 100%;
+vertical-align: middle;
+margin: 0px;
+}
+
+button,
+input,
+select,
+textarea {
+font-size: 100%;
+margin: 0;
+vertical-align: middle;
+}
+button,
+input {
+overflow: visible;
+line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+padding: 0;
+border: 0;
+}
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+cursor: pointer;
+-webkit-appearance: button;
+}
+input[type='search'] {
+box-sizing: content-box;
+-webkit-appearance: textfield;
+}
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button {
+-webkit-appearance: none;
+}
+
+._t2 {
+cursor: pointer;
+}
+._40 {
+width: 100%;
+}
+._2s {
+box-sizing: border-box;
+}
+._2p {
+min-height: 36px;
+}
+._27 {
+display: block;
+}
+._5e {
+border: 0;
+}
+._sr {
+padding: 8px 14px;
+}
+._so {
+border-radius: 4px;
+}
+._2q {
+min-height: 40px;
+}
+._yn {
+cursor: text;
+}
+._yl {
+border-color: #b5b5b5;
+}
+._yk {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+border-radius: 4px;
+border-style: solid;
+border-width: 1px;
+padding: 8px 14px;
+}
+._5n {
+color: #555;
+}
+._5i {
+background-color: #fff;
+}
+._td {
+font-size: 16px;
+}
+._ta {
+  text-align: center;
+}

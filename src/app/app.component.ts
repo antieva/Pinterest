@@ -17,7 +17,7 @@ export class AppComponent {
 
   isUniqueUser(newUser: User) {
     for (let user of this.users) {
-      if (user[0] === newUser[0] && user[1] === newUser[1]) {
+      if (user[0] === newUser.email && user[1] === newUser.password) {
         return false;
       }
     }
@@ -25,6 +25,10 @@ export class AppComponent {
   }
 
   addUser(newUser: User) {
-    this.users.push(newUser);
+    if (this.isUniqueUser(newUser)){
+      this.users.push(newUser);
+      return true;
+    }
+    return false;
   }
 }
