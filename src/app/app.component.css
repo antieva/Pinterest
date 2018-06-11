@@ -9,7 +9,6 @@
 }
 }
 
-
 html {
 background-color: #efefef;
 }
@@ -490,6 +489,13 @@ opacity: 0;
 html:not([dir=rtl]) ._sk {
 text-align: left;
 }
+
+._6b {
+color: #e3780c;
+}
+._tc {
+font-size: 14px;
+}
 ._51mz {
 border: 0;
 border-collapse: collapse;
@@ -532,6 +538,24 @@ overflow: hidden;
 text-align: center;
 text-overflow: clip;
 white-space: nowrap;
+}
+
+._si {
+-webkit-hyphens: auto;
+-ms-hyphens: auto;
+-moz-hyphens: auto;
+hyphens: auto;
+word-wrap: break-word;
+}
+._sc {
+font-weight: 400;
+}
+._sa {
+line-height: 1.2;
+}
+._s7 {
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
 }
 ._s8 {
 font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto Oxygen-Sans,Ubuntu,Cantarell,“Fira Sans”,“Droid Sans”,Helvetica Neue,Helvetica,\\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3,Hiragino Kaku Gothic Pro,\\30E1\30A4\30EA\30AA,Meiryo,"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF",Arial,sans-serif;

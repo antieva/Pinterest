@@ -32,6 +32,11 @@
                                   <div>
 
                                     <app-new-user (sendUser)="addUser($event)"></app-new-user>
+                                    <div *ngIf="!isUniqueUser(sendUser)" class="_ta _s7 _s8 _s9 _tc _6b _sa _sk _si _sc">
+                                      <span class="_ta _s7 _s8 _s9 _tc _6b _sa _sk _si _sc">Oops, that email’s taken or your password’s incorrect. </span>
+                                      <span class="_ta _s7 _s8 _s9 _tc _6b _sa _sk _si _sc">
+                                        <button style="background-color: transparent; border: none; vertical-align: inherit; padding: 0px; background-position: initial initial; background-repeat: initial initial;"><span class="_ta _s7 _s8 _s9 _tc _6b _sa _sk _si _sd">Reset it?</span></button>
+                                      </span><span class="_ta _s7 _s8 _s9 _tc _6b _sa _sk _si _sc"></span></div>
 
                                     <p style="margin-bottom: 3px; overflow: hidden; text-align: center; color: rgb(85, 85, 85); font-weight: bold;">OR</p>
                                     <div>
