@@ -14,4 +14,17 @@ export class AccountService {
     return this.users;
   }
 
+  checkEmail(email: string) {
+    for (let user in this.users ) {
+      if (user['email'] === email) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  addUser(newUser: User) {
+    this.users.push(newUser)
+  }
+
 }
