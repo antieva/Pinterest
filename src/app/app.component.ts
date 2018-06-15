@@ -15,9 +15,9 @@ export class AppComponent {
   new User('emailThree@gmail.com', '111password')
   ];
 
-  isUniqueUser(newUser: User) {
+  isUniqueUser(email: string) {
     for (let user of this.users) {
-      if (user[0] === newUser.email) {
+      if (user[0] === email) {
         return false;
       }
     }
@@ -25,7 +25,7 @@ export class AppComponent {
   }
 
   addUser(newUser: User) {
-    if (this.isUniqueUser(newUser)){
+    if (this.isUniqueUser(newUser.email)){
       this.users.push(newUser);
       return true;
     }
