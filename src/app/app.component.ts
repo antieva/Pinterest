@@ -17,7 +17,7 @@ export class AppComponent {
 
   isUniqueUser(email:string) {
     for (let user of this.users) {
-      if (user[0] === email) {
+      if (user.email === email) {
         return false;
       }
     }
@@ -25,6 +25,15 @@ export class AppComponent {
   }
 
   addUser(newUser: User) {
+    for (let user of this.users) {
+      if (user.email === newUser.email) {
+        return false;
+      }
+    }
     this.users.push(newUser);
+    for (let user of this.users) {
+      console.log(user.email);
+    }
+    return true;
   }
 }

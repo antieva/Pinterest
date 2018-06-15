@@ -13,4 +13,7 @@ export class NewUserComponent {
     let newUser: User = new User(email, password);
     this.sendUser.emit(newUser);
   }
+  errorMessage() {
+    this.sendUser.emit(false);
+  }
 }
