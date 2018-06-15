@@ -26,6 +26,9 @@ A user can:
 #### Save pins found on Pinterest
  To save a pin user has to hover a cursor over the pin and click the red Save button that appears in the top right corner. User will be asked which board they want to save it to.
 
+
+### Future functionality:
+
 #### Save pins user have on their computer or what they found on the Web
  The user has to navigate to their profile, click either your Pins tab or Boards tab and look for the Create Pin button or Create Board button to the far left of your pins/boards.
 
