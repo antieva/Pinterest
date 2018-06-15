@@ -7,6 +7,7 @@ import { NewUserComponent } from './new-user/new-user.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { LoginComponent } from './login/login.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -18,7 +19,8 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    NewUserComponent
+    NewUserComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
