@@ -17,7 +17,7 @@ export class AppComponent {
 
   isUniqueUser(newUser: User) {
     for (let user of this.users) {
-      if (user[0] === newUser.email && user[1] === newUser.password) {
+      if (user[0] === newUser.email) {
         return false;
       }
     }
