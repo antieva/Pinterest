@@ -16,20 +16,15 @@ export class NewUserComponent {
   submitForm(email: string, password: string) {
     let newUser: User = new User(email, password);
     this.sendUser.emit(newUser);
-    this.accountService.addUser(newUser);
+    if (this.accountService.checkEmail(email)) {
+      this.accountService.addUser(newUser);
+    }
   }
-  users: User[] = [
-  new User('emailOne@gmail.com', '123password'),
-  new User('emailTwo@gmail.com', '456password'),
-  new User('emailThree@gmail.com', '111password')
-  ];
 
   isUniqueUser(email:string) {
-    for (let user of this.users) {
-      if (user.email === email) {
-        return false;
-      }
+    if (this.accountService.checkEmail(email)) {
+      return true;
     }
-    return true;
+    return false;
   }
 }
