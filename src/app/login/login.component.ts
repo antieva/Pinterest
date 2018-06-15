@@ -11,9 +11,10 @@ import { User } from '../models/user.model';
 export class LoginComponent implements OnInit {
   users: User[];
 
-  constructor(private router: Router, private albumService: AccountService) {}
+  constructor(private router: Router, private accountService: AccountService) {}
 
   ngOnInit() {
+    this.users = this.accountService.getAccounts();
   }
 
   goToAccount(loggedinUser: User) {

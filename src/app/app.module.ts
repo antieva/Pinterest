@@ -8,6 +8,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { LoginComponent } from './login/login.component';
+import { AccountCreationComponent } from './account-creation/account-creation.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -20,7 +21,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     NewUserComponent,
-    LoginComponent
+    LoginComponent,
+    AccountCreationComponent
   ],
   imports: [
     BrowserModule,

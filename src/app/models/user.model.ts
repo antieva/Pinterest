@@ -4,11 +4,6 @@ export class User {
   public laguage: string = "";
   public country: string = "";
   public interests: string[] = [];
-  public id: number;
-  public static counter: number = 0;
 
-  constructor(public email: string, public password: string) {
-    this.id = User.counter;
-    User.counter++;
-  }
+  constructor(public email: string, public password: string) {}
 }

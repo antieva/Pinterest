@@ -7,7 +7,7 @@ export class AccountService {
   constructor() { }
 
   getAccounts() {
-    
+    return null;
   }
 
 }
