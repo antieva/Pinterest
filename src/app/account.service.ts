@@ -1,13 +1,17 @@
 import { Injectable } from '@angular/core';
 import { User } from './models/user.model';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
 export class AccountService {
+  users: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase) {
+    this.users = database.list('users');
+  }
 
   getAccounts() {
-    return null;
+    return this.users;
   }
 
 }
