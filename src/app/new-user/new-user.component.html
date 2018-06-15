@@ -9,6 +9,9 @@
       <span><input #newEmail aria-invalid="false" class="_yk _25 _2s _2q _ta _s7 _s8 _s9 _td _40 _yn _5n _5i _yl" id="email" name="id" placeholder="Email" type="email"></span>
     </div>
   </fieldset>
+  <div *ngIf="isUniqueUser(newEmail.value) == false" class="_ta _s7 _s8 _s9 _tc _6b _sa _sk _si _sc">
+    Oops, that email’s taken or your password’s incorrect.
+  </div>
   <fieldset style="position: relative;">
     <div class="_0 _25 _2s">
       <div class="_0 _25 _2s _6m">
@@ -20,9 +23,5 @@
     </div>
   </fieldset>
   <button (click)="submitForm(newEmail.value, newPassword.value)" aria-label="Continue creating your Pinterest account" class="red SignupButton active" type="button" style="border: 0px; height: 36px; display: inline-block; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; -webkit-font-smoothing: antialiased; padding: 0px 18px; font-size: 15px; font-weight: bold; outline: none; -webkit-box-shadow: none; box-shadow: none; cursor: pointer; margin-top: 10px; vertical-align: middle; text-align: center; background-color: rgb(189, 8, 28); color: rgb(255, 255, 255); width: 100%;">Continue</button>
-  
-  <div *ngIf="isUniqueUser(newEmail.value) == false" class="_ta _s7 _s8 _s9 _tc _6b _sa _sk _si _sc">
-    Oops, that email’s taken or your password’s incorrect.
-  </div>
 
 </form>
