@@ -14,7 +14,16 @@ export class NewUserComponent {
   constructor(private accountService: AccountService) { }
 
   continueCreation(email: string, password: string) {
-    let newUser: User = new User(email, password);
+    let i: number = 0;
+    let name: string = '';
+    for (var char of email) {
+      while (char != '@') {
+        i++;
+      }
+      break;
+    }
+    name = email.slice(0,i);
+    let newUser: User = new User(email, password, name);
     this.sendUser.emit(newUser);
     if (this.accountService.checkEmail(email)) {
       this.accountService.addUser(newUser);
