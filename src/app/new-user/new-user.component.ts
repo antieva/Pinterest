@@ -13,7 +13,7 @@ export class NewUserComponent {
 
   constructor(private accountService: AccountService) { }
 
-  submitForm(email: string, password: string) {
+  continueCreation(email: string, password: string) {
     let newUser: User = new User(email, password);
     this.sendUser.emit(newUser);
     if (this.accountService.checkEmail(email)) {

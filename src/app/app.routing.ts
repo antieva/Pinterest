@@ -4,8 +4,8 @@ import { AccountCreationComponent } from './account-creation/account-creation.co
 
 const appRoutes: Routes = [
   {
-    path: 'newUser',
-    component: AccountCreationComponent 
+    path: 'user/:id',
+    component: AccountCreationComponent
   }
 ];
 
