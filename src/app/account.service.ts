@@ -14,13 +14,13 @@ export class AccountService {
     return this.users;
   }
 
-  checkEmail(email: string) {
+  isEmailInDatabase(email: string) {
     for (let user in this.users ) {
       if (user['email'] === email) {
-        return false;
+        return true;
       }
     }
-    return true;
+    return false;
   }
 
   addUser(newUser: User) {

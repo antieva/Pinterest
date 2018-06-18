@@ -94,7 +94,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Known Bugs
 
-_None._
+_Don't enter the email without '@' sign: it will create an infinite loop. This issue will be eliminated when user input validation is created._
 
 ## Support and contact details
 

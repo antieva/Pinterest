@@ -12,22 +12,20 @@ import { Router } from '@angular/router';
 export class NewUserComponent {
   @Output() sendUser = new EventEmitter();
 
-  users: User[];
-
   constructor(private router: Router, private accountService: AccountService) { }
 
   continueCreation(email: string, password: string) {
     let newUser: User = new User(email, password);
     this.sendUser.emit(newUser);
-    if (this.accountService.checkEmail(email)) {
+    if (!this.accountService.isEmailInDatabase(email)) {
       //this.accountService.addUser(newUser);
-      this.router.navigate(['users', newUser.email, newUser.password, newUser.name]);
+      this.router.navigate(['newUser', newUser.email, newUser.password, newUser.name]);
     }
   }
 
 
   isUniqueUser(email:string) {
-    if (this.accountService.checkEmail(email)) {
+    if (!this.accountService.isEmailInDatabase(email)) {
       return true;
     }
     return false;
