@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { User } from '../models/user.model';
 import { AccountService } from '../account.service';
 import { Router } from '@angular/router';
@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class NewUserComponent {
   @Output() sendUser = new EventEmitter();
 
-  users: User[] = [];
+  users: User[];
 
   constructor(private router: Router, private accountService: AccountService) { }
 
@@ -20,10 +20,11 @@ export class NewUserComponent {
     let newUser: User = new User(email, password);
     this.sendUser.emit(newUser);
     if (this.accountService.checkEmail(email)) {
-      this.accountService.addUser(newUser);
-      this.router.navigate(['users', newUser.id]);
+      //this.accountService.addUser(newUser);
+      this.router.navigate(['users', newUser.email, newUser.password, newUser.name]);
     }
   }
+
 
   isUniqueUser(email:string) {
     if (this.accountService.checkEmail(email)) {

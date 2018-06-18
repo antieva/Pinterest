@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
 import { AccountService } from '../account.service';
 import { User } from '../models/user.model';
 
@@ -9,10 +11,22 @@ import { User } from '../models/user.model';
   providers: [AccountService]
 })
 export class AccountCreationComponent implements OnInit {
+  userEmail: string = '';
+  userPassword: string = '';
+  userName: string = '';
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private location: Location,
+    private accountService: AccountService
+  ) { }
 
   ngOnInit() {
+    this.route.params.forEach((urlParameters) => {
+      this.userEmail =urlParameters['email'];
+      this.userPassword =urlParameters['password'];
+      this.userName =urlParameters['name'];
+    });
   }
 
 }
