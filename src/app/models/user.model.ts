@@ -7,13 +7,9 @@ export class User {
 
   constructor(public email: string, public password: string) {
     let i: number = 0;
-    let name: string = '';
-    for (var char of email) {
-      while (char != '@') {
+    while (this.email[i] != '@' || i < this.email.length) {
         i++;
-      }
-      break;
     }
-    name = email.slice(0,i);
+    this.name = this.email.slice(0,i);
   }
 }
