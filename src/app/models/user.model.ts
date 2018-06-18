@@ -7,7 +7,7 @@ export class User {
 
   constructor(public email: string, public password: string) {
     let i: number = 0;
-    while (this.email[i] != '@' || i < this.email.length) {
+    while (this.email[i] != '@') {
         i++;
     }
     this.name = this.email.slice(0,i);
