@@ -1,0 +1,75 @@
+html, body {
+font-family: "Helvetica Neue", "Helvetica", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", arial, sans-serif;
+color: #211922;
+font-size: 12px;
+}
+
+.NuxGenderStep .NuxGenderStep__headerContent {
+margin: 32px 32px 16px;
+width: 736px;
+}
+
+.NuxContainer .NuxContainer__NuxStepContainer {
+height: 100%;
+}
+
+.NuxContainer {
+background: #fff;
+height: 640px;
+max-height: calc(100vh - 40px);
+width: 800px;
+}
+
+.ReactModal__Content {
+border-radius: 6px;
+box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+margin: auto;
+max-height: 200%;
+position: relative;
+}
+
+.Modal .modalMask, .Modal.webNewContentNewRepin .modalMask, .ReactModal__Overlay {
+background-color: rgba(0, 0, 0, 0.6);
+opacity: 1;
+}
+
+.NuxContainer.slimWidth {
+width: 544px;
+}
+
+address, article, aside, div, footer, header, hgroup, layer, main, nav, section {
+display: block;
+}
+
+.NuxGenderStep {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+height: 100%;
+}
+
+.ReactModal__Overlay {
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+background-color: rgba(226, 228, 228, 0.9);
+bottom: 0;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+left: 0;
+overflow-y: scroll;
+padding: 20px;
+position: fixed;
+right: 0;
+top: 0;
+z-index: 751;
+}
+
+.noScroll, .ReactModal__Body--open {
+overflow: hidden;
+}

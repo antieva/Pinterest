@@ -9,24 +9,23 @@ import { User } from '../models/user.model';
   templateUrl: './account-creation.component.html',
   styleUrls: ['./account-creation.component.css'],
   providers: [AccountService]
-})
-export class AccountCreationComponent implements OnInit {
-  userEmail: string = '';
-  userPassword: string = '';
-  userName: string = '';
+  })
+  export class AccountCreationComponent implements OnInit {
+    userEmail: string = '';
+    userPassword: string = '';
+    userName: string = '';
 
-  constructor(
-    private route: ActivatedRoute,
-    private location: Location,
-    private accountService: AccountService
-  ) { }
+    constructor(
+      private route: ActivatedRoute,
+      //private location: Location,
+      private accountService: AccountService
+    ) { }
 
-  ngOnInit() {
-    this.route.params.forEach((urlParameters) => {
+    ngOnInit() {
+      this.route.params.forEach((urlParameters) => {
       this.userEmail =urlParameters['email'];
       this.userPassword =urlParameters['password'];
       this.userName =urlParameters['name'];
     });
   }
-
 }
